@@ -7,6 +7,7 @@ using System.Web.Http;
 using System.Net.Http.Formatting;
 using Newtonsoft.Json.Serialization;
 using TodoApp.Api.Db;
+using TodoApp.Api.Authentication;
 
 [assembly: OwinStartup(typeof(TodoApp.Api.Startup))]
 
@@ -37,7 +38,7 @@ namespace TodoApp.Api
         private void ConfigureOAuthTokenGeneration(IAppBuilder app)
         {
             app.CreatePerOwinContext(TodoDbContext.Create);
-            app.CreatePerOwinContext<TodoDbContext>(TodoDbContext.Create);
+            app.CreatePerOwinContext<OwnerManager>(OwnerManager.Create);
         }
     }
 }

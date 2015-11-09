@@ -13,6 +13,7 @@ using TodoApp.Api.Models;
 
 namespace TodoApp.Api.Controllers
 {
+    [Authorize]
     public class OwnersController : ApiController
     {
         private TodoDbContext db = new TodoDbContext();

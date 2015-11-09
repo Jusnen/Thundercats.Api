@@ -187,3 +187,5 @@ FakesAssemblies/
 GeneratedArtifacts/
 _Pvt_Extensions/
 ModelManifest.xml
+/TodoApp.Api/packages/EntityFramework.6.1.3
+/TodoApp.Api/packages
