@@ -68,7 +68,7 @@ namespace TodoApp.Api.Migrations
             AddColumn("dbo.AspNetUsers", "PhoneNumberConfirmed", c => c.Boolean(nullable: false));
             AddColumn("dbo.AspNetUsers", "TwoFactorEnabled", c => c.Boolean(nullable: false));
             AddColumn("dbo.AspNetUsers", "LockoutEndDateUtc", c => c.DateTime());
-            AddColumn("dbo.AspNetUsers", "LockoutEnabled", c => c.Boolean(nullable: false));
+            AddColumn("dbo.AspNetUsers", "LockoutEnabC:\Users\j.volquez\Source\Repos\TodoApp\TodoApp.Api\TodoApp.Api\Infrastructure\ApplicationRoleManager.csled", c => c.Boolean(nullable: false));
             AddColumn("dbo.AspNetUsers", "AccessFailedCount", c => c.Int(nullable: false));
             AddColumn("dbo.AspNetUsers", "UserName", c => c.String(nullable: false, maxLength: 256));
             AddColumn("dbo.AspNetUsers", "Discriminator", c => c.String(nullable: false, maxLength: 128));
